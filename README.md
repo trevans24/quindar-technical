@@ -14,7 +14,7 @@ In this project you will retrieve and display launch data from [SpaceX's public 
 
 - This challenge is intended to take roughly one hour. The component is not expected to be production-ready, we just want to see your approach to this problem. 
 
-- If you are uncertain about specifics, try to push forward and state your assumptions in code comments, but if there are any blocking questions then you can reach out to Zach (zach.meza@quindar.space) or Sunny (sunny@quindar.space).
+- If you are uncertain about specifics, try to push forward and state your assumptions in code comments, but if there are any blocking questions then you can reach out to Seth (seth.burke@quindar.space) or Sunny (sunny@quindar.space).
 
 To ensure privacy, please follow these steps to share your code with us:
 - Create a new repository under your gh username, ensuring the visibility is set to private.
@@ -25,8 +25,8 @@ To ensure privacy, please follow these steps to share your code with us:
 - Invite us to your private repository: 
   - `sunbrst` 
   - `zachmeza` 
-  - `smparekh`
   - `annshultequindar`
+  - `sburkequindar`
 
 ## Getting Started
 
