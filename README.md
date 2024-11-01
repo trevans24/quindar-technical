@@ -25,7 +25,7 @@ To ensure privacy, please follow these steps to share your code with us:
 - Invite us to your private repository: 
   - `sunbrst` 
   - `zachmeza` 
-  - `annshultequindar`
+  - `annschulte`
   - `sburkequindar`
 
 ## Getting Started
