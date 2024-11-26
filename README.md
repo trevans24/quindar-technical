@@ -28,6 +28,10 @@ To ensure privacy, please follow these steps to share your code with us:
   - `annschulte`
   - `sburkequindar`
 
+Please update this README or create a new one and include:
+- brief description of your solution
+- description of next steps you would take if you needed to "productionize" and test this capability
+
 ## Getting Started
 
 First, run the development server:
