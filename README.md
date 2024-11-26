@@ -6,13 +6,13 @@ In this project you will retrieve and display launch data from [SpaceX's public 
 
 - You should use the Apollo GraphQL client to retrieve any launch data that you find interesting and display the historical and upcoming launch data in an intuitive format.
 
-- We have included an `antd` Table to display some initial data. 
+- We have included an `antd` Table to display some initial data. Please replace this with a custom component that you'll develop to display the data here.
 
 - The styling is messed up with the current Table and you can update the styling as you choose for your custom component. We don't expect production-quality design here. 
 
 - A strech goal would be to create an interactive component that displays more details of a single launch when the user interacts with your component.
 
-- This challenge is intended to take roughly one hour. The component is not expected to be production-ready, we just want to see your approach to this problem. 
+- This challenge is intended to take roughly two hours. The component is not expected to be production-ready, we just want to see your approach to this problem. 
 
 - If you are uncertain about specifics, try to push forward and state your assumptions in code comments, but if there are any blocking questions then you can reach out to Seth (seth.burke@quindar.space) or Sunny (sunny@quindar.space).
 
