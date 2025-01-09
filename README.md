@@ -25,7 +25,6 @@ To ensure privacy, please follow these steps to share your code with us:
 - Invite us to your private repository: 
   - `sunbrst` 
   - `zachmeza` 
-  - `annschulte`
   - `sburkequindar`
 
 Please update this README or create a new one and include:
