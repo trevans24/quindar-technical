@@ -26,6 +26,8 @@ To ensure privacy, please follow these steps to share your code with us:
   - `sunbrst` 
   - `zachmeza` 
   - `sburkequindar`
+  - `sameerisaq`
+  - `alecluna`
 
 Please update this README or create a new one and include:
 - brief description of your solution
