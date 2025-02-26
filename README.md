@@ -1,68 +1,57 @@
-## Quindar Skills Test
+Solution Overview
 
-In this project you will retrieve and display launch data from [SpaceX's public GraphQL API](https://studio.apollographql.com/public/SpaceX-pxxbxen/variant/current/explorer?explorerURLState=N4IgJg9gxgrgtgUwHYBcQC4QEcYIE4CeABADICGMSUAFggM5HAA6SRRANhVbQ8620TAIUZAJbs6LAUVFgpAuKLp1REJAH1Z8touWqNSMonkBfFiZAmgA). 
+This project retrieves and displays SpaceX launch data using Apollo Client and GraphQL. Instead of using an antd Table, a custom Launch Card component has been implemented to present launch details in a more intuitive and visually appealing way. The application:
 
-**The objective of this challenge is to create a custom component to best display historical and upcoming launch data. Feel free to use any libraries or components that you are comfortable with.**
+Fetches both historical and upcoming launches from the SpaceX GraphQL API.
 
-- You should use the Apollo GraphQL client to retrieve any launch data that you find interesting and display the historical and upcoming launch data in an intuitive format.
+Displays launches in a responsive grid layout instead of a standard table.
 
-- We have included an `antd` Table to display some initial data. Please replace this with a custom component that you'll develop to display the data here.
+Uses expandable cards that allow users to view more details about a specific launch when clicked.
 
-- The styling is messed up with the current Table and you can update the styling as you choose for your custom component. We don't expect production-quality design here. 
+Implements Apollo Client caching for optimized performance and reduced redundant requests.
 
-- A strech goal would be to create an interactive component that displays more details of a single launch when the user interacts with your component.
+Uses client-side fetching to support interactivity and potential real-time updates.
 
-- This challenge is intended to take roughly two hours. The component is not expected to be production-ready, we just want to see your approach to this problem. 
+Productionization & Next Steps
 
-- If you are uncertain about specifics, try to push forward and state your assumptions in code comments, but if there are any blocking questions then you can reach out to Seth (seth.burke@quindar.space) or Sunny (sunny@quindar.space).
+If this feature were to be productionized, the following improvements would be made:
 
-To ensure privacy, please follow these steps to share your code with us:
-- Create a new repository under your gh username, ensuring the visibility is set to private.
-- Clone the skills-test repository.
-- Create a new remote using the upstream repository's URL.
-- Set the origin URL to that of your newly-created private repository.
-- Push to origin .
-- Invite us to your private repository: 
-  - `sunbrst` 
-  - `zachmeza` 
-  - `sburkequindar`
-  - `sameerisaq`
-  - `alecluna`
+1. Error Handling & Loading States
 
-Please update this README or create a new one and include:
-- brief description of your solution
-- description of next steps you would take if you needed to "productionize" and test this capability
+Improve UI feedback during data fetching (e.g., skeleton loaders instead of simple text-based loading indicators).
 
-## Getting Started
+Add retry logic for failed API calls.
 
-First, run the development server:
+Implement error boundaries to gracefully handle unexpected API failures.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+2. Performance Optimization
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Implement pagination or infinite scrolling to handle large datasets efficiently.
 
-You can start editing the page by modifying `app/pages/page.tsx`. The page auto-updates as you edit the file.
+Use incremental static regeneration (ISR) in Next.js to improve performance for frequently updated data.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Optimize Apollo Client cache policies to avoid redundant network requests.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+3. Testing & Quality Assurance
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Unit tests using Jest and React Testing Library to validate component rendering and interactions.
 
+Integration tests to ensure API calls and data-fetching logic work as expected.
 
-## Learn More
+End-to-end tests using Cypress or Playwright to simulate real user interactions.
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+4. Enhanced UI/UX
 
-To learn more about Next.js, take a look at the following resources:
+Add filtering options (e.g., search by rocket name, success/failure status).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Improve accessibility (ARIA attributes, keyboard navigation support).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Implement animations/transitions for a smoother user experience.
+
+5. Backend & API Considerations
+
+Evaluate WebSockets or GraphQL subscriptions to enable real-time updates.
+
+Consider an API gateway for caching or rate-limiting requests if scaled for high traffic.
+
+By incorporating these enhancements, this solution could be scaled into a production-ready, maintainable, and high-performing feature for displaying launch data.
