@@ -14,34 +14,27 @@ If this feature were to be productionized, the following improvements would be m
 
 1. Error Handling & Loading States
 
-Improve UI feedback during data fetching (e.g., skeleton loaders instead of simple text-based loading indicators).
-
-Add retry logic for failed API calls.
-
-Implement error boundaries to gracefully handle unexpected API failures.
+- Improve UI feedback during data fetching (e.g., skeleton loaders instead of simple text-based loading indicators).
+- Add retry logic for failed API calls.
+- Implement error boundaries to gracefully handle unexpected API failures.
 
 2. Performance Optimization
 
-Implement pagination or infinite scrolling to handle large datasets efficiently.
+- Implement pagination or infinite scrolling to handle large datasets efficiently.
+- Optimize cache policies to avoid redundant network requests.
 
-Optimize cache policies to avoid redundant network requests.
+3. Testing & Quality Assurance: **One or any of the following**
 
-3. Testing & Quality Assurance: One or any of the following
-
-Unit tests using Jest and React Testing Library to validate component rendering and interactions.
-
-Integration tests to ensure API calls and data-fetching logic work as expected.
-
-End-to-end tests using Cypress or Playwright to simulate real user interactions.
+- Unit tests using Jest and React Testing Library to validate component rendering and interactions.
+- Integration tests to ensure API calls and data-fetching logic work as expected.
+- End-to-end tests using Cypress or Playwright to simulate real user interactions.
 
 4. Enhanced UI/UX
 
-Add filtering options (e.g., search by rocket name, success/failure status).
-
-Improve accessibility (ARIA attributes, keyboard navigation support).
-
-Implement animations/transitions for a smoother user experience.
+- Add filtering options (e.g., search by rocket name, success/failure status).
+- Improve accessibility (ARIA attributes, keyboard navigation support).
+- Implement animations/transitions for a smoother user experience.
 
 5. Other Considerations
 
-Evaluate WebSockets or GraphQL subscriptions to enable real-time updates, if this data were updating more frequently
+- Evaluate WebSockets or GraphQL subscriptions to enable real-time updates, if this data were updating more frequently
