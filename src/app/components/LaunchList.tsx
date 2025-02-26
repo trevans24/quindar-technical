@@ -1,5 +1,8 @@
 "use client"
 import { useQuery, gql } from "@apollo/client"
+import LaunchCard from "./LaunchCard"
+import { LaunchType } from "../lib/types"
+import styles from "./launchList.module.css"
 
 const GET_LAUNCHES = gql`
   query GetLaunches {
@@ -40,9 +43,16 @@ const LaunchList = () => {
   if (loading) return <p>Loading...</p>
   if (error) return <p>Error fetching launches</p>
 
-  console.log("data", data)
-
-  return <div>working</div>
+  return (
+    <div className={styles.list}>
+      <h2>Upcoming Launches</h2>
+      <div className={styles.grid}>
+        {data.launchesUpcoming.map((launch: LaunchType) => (
+          <LaunchCard key={launch.id} {...launch} />
+        ))}
+      </div>
+    </div>
+  )
 }
 
 export default LaunchList

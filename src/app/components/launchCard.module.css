@@ -1,0 +1,26 @@
+.card {
+  background: #1c1c1c;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.patch {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.details {
+  margin-top: 10px;
+  background: #333;
+  padding: 10px;
+  border-radius: 5px;
+}
