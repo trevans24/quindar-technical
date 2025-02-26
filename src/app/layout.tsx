@@ -1,4 +1,5 @@
 import "./globals.css"
+import Provider from "./components/Provider"
 
 export const metadata = {
   title: "Quindar Technical Interview",
@@ -12,7 +13,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body suppressHydrationWarning>
+        <Provider>{children}</Provider>
+      </body>
     </html>
   )
 }

@@ -1,7 +1,6 @@
 "use client" // this is a client component 👈🏽
 import styles from "./page.module.css"
-import { ApolloClient, InMemoryCache, gql } from "@apollo/client"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import LaunchList from "./components/LaunchList"
 
 export default function Home() {
@@ -20,31 +19,27 @@ export default function Home() {
     },
   ]
 
-  useEffect(() => {
-    async function fetchData() {
-      const client = new ApolloClient({
-        uri: "https://spacex-production.up.railway.app/graphql",
-        cache: new InMemoryCache(),
-      })
-      const { data } = await client.query({
-        query: gql`
-          query GetLaunches {
-            launches(limit: 100) {
-              id
-              mission_name
-              launch_date_local
-            }
-          }
-        `,
-      })
-      setData(data["launches"])
-    }
-    fetchData()
-  }, [])
-
-  if (!data) {
-    return <div>Loading...</div>
-  }
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     const client = new ApolloClient({
+  //       uri: "https://spacex-production.up.railway.app/graphql",
+  //       cache: new InMemoryCache(),
+  //     })
+  //     const { data } = await client.query({
+  //       query: gql`
+  //         query GetLaunches {
+  //           launches(limit: 100) {
+  //             id
+  //             mission_name
+  //             launch_date_local
+  //           }
+  //         }
+  //       `,
+  //     })
+  //     setData(data["launches"])
+  //   }
+  //   fetchData()
+  // }, [])
 
   return (
     <main className={styles.main}>

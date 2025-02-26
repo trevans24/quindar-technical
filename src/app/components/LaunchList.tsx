@@ -1,3 +1,4 @@
+"use client"
 import { useQuery, gql } from "@apollo/client"
 
 const GET_LAUNCHES = gql`
@@ -34,6 +35,13 @@ const GET_LAUNCHES = gql`
 `
 
 const LaunchList = () => {
+  const { data, loading, error } = useQuery(GET_LAUNCHES)
+
+  if (loading) return <p>Loading...</p>
+  if (error) return <p>Error fetching launches</p>
+
+  console.log("data", data)
+
   return <div>working</div>
 }
 
