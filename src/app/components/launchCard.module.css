@@ -1,10 +1,10 @@
 .card {
   background: #1c1c1c;
-  color: white;
-  padding: 15px;
   border-radius: 8px;
-  text-align: center;
+  color: white;
   cursor: pointer;
+  padding: 15px;
+  text-align: center;
   transition: transform 0.2s;
   width: 100%;
 }
@@ -21,15 +21,25 @@
 }
 
 .details {
-  margin-top: 10px;
   background: #333;
-  padding: 10px;
   border-radius: 5px;
+  margin-top: 10px;
+  padding: 10px;
 }
 
 .info {
   display: grid;
+  font-family: var(--font-mono);
   gap: 8px;
+}
+
+.info p {
+  background-color: rgba(var(--callout-rgb), 0.5);
+  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+  border-radius: var(--border-radius);
+  margin: 0;
+  position: relative;
+  padding: 1rem;
 }
 
 .name {
