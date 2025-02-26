@@ -16,12 +16,12 @@ const LaunchCard = ({
   return (
     <div className={styles.card} onClick={() => setExpanded(!expanded)}>
       <img
-        src={links?.mission_patch || "/placeholder.png"}
+        src={links?.mission_patch || "/space-patch.png"}
         alt="Mission Patch"
-        className="patch"
+        className={styles.patch}
       />
       <div className={styles.info}>
-        <h3>{mission_name}</h3>
+        <h3 className={styles.name}>{mission_name}</h3>
         <p>
           <strong>Rocket:</strong> {rocket.rocket_name}
         </p>

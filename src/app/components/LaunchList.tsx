@@ -6,7 +6,7 @@ import styles from "./launchList.module.css"
 
 const GET_LAUNCHES = gql`
   query GetLaunches {
-    launchesPast(limit: 5) {
+    launchesPast(limit: 6) {
       id
       mission_name
       launch_date_utc
@@ -20,7 +20,7 @@ const GET_LAUNCHES = gql`
       }
       details
     }
-    launchesUpcoming(limit: 5) {
+    launchesUpcoming(limit: 6) {
       id
       mission_name
       launch_date_utc
