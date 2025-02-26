@@ -1,18 +1,14 @@
-Solution Overview
+# Solution Overview
 
-This project retrieves and displays SpaceX launch data using Apollo Client and GraphQL. Instead of using an antd Table, a custom Launch Card component has been implemented to present launch details in a more intuitive and visually appealing way. The application:
+This project retrieves and displays SpaceX launch data using Apollo Client and GraphQL. Instead of using an antd `Table`, a custom Launch Card component has been implemented to present launch details in a more intuitive and visually appealing way. The application:
 
-Fetches both historical and upcoming launches from the SpaceX GraphQL API.
+- Fetches **both historical and upcoming launches** from the SpaceX GraphQL API.
+- Displays launches in a responsive grid layout instead of a standard table.
+- Uses expandable cards that allow users to view more details about a specific launch when clicked.
+- Implements Apollo Client caching for optimized performance and reduced redundant requests.
+- Uses client-side fetching to support interactivity and potential real-time updates.
 
-Displays launches in a responsive grid layout instead of a standard table.
-
-Uses expandable cards that allow users to view more details about a specific launch when clicked.
-
-Implements Apollo Client caching for optimized performance and reduced redundant requests.
-
-Uses client-side fetching to support interactivity and potential real-time updates.
-
-Productionization & Next Steps
+## Productionization & Next Steps
 
 If this feature were to be productionized, the following improvements would be made:
 
@@ -28,11 +24,9 @@ Implement error boundaries to gracefully handle unexpected API failures.
 
 Implement pagination or infinite scrolling to handle large datasets efficiently.
 
-Use incremental static regeneration (ISR) in Next.js to improve performance for frequently updated data.
+Optimize cache policies to avoid redundant network requests.
 
-Optimize Apollo Client cache policies to avoid redundant network requests.
-
-3. Testing & Quality Assurance
+3. Testing & Quality Assurance: One or any of the following
 
 Unit tests using Jest and React Testing Library to validate component rendering and interactions.
 
@@ -48,10 +42,6 @@ Improve accessibility (ARIA attributes, keyboard navigation support).
 
 Implement animations/transitions for a smoother user experience.
 
-5. Backend & API Considerations
+5. Other Considerations
 
-Evaluate WebSockets or GraphQL subscriptions to enable real-time updates.
-
-Consider an API gateway for caching or rate-limiting requests if scaled for high traffic.
-
-By incorporating these enhancements, this solution could be scaled into a production-ready, maintainable, and high-performing feature for displaying launch data.
+Evaluate WebSockets or GraphQL subscriptions to enable real-time updates, if this data were updating more frequently
